@@ -73,7 +73,7 @@ thislist = ["apple", "banana", "cherry"]
 del thislist
 
 
-#loop list
+# loop list
 # https://www.w3schools.com/python/python_lists_loop.asp
 print("loop list")
 
@@ -95,3 +95,9 @@ while i < len(thislist):
 # to je dobre!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 thislist = ["apple", "banana", "cherry"]
 [print(x) for x in thislist]
+
+
+# List Comprehension
+# https://www.w3schools.com/python/python_lists_comprehension.asp
+print("List Comprehension")
+
