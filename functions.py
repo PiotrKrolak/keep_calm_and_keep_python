@@ -1,3 +1,6 @@
+#https://www.w3schools.com/python/python_functions.asp
+
+
 def my_function(*kids):         # If you do not know how many arguments that will be passed into your function, add a * before the parameter name in the function definition.
   print("The youngest child is " + kids[2])
 
