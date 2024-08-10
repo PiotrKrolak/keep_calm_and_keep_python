@@ -11,6 +11,8 @@ Klasa nadrzędna to klasa, z której dziedziczymy, nazywana również klasą baz
 Klasa potomna to klasa, która dziedziczy z innej klasy, nazywana również klasą pochodną.
 '''
 
+
+# utworzenie klasy person z parametrami i predefiniowana metoda
 class Person:
   def __init__(self, fname, lname):
     self.firstname = fname
@@ -23,3 +25,32 @@ class Person:
 
 x = Person("John", "Doe")
 x.printname()
+
+
+# utworzenie klasy student ktora dziedziczy z klasy person
+class Student(Person):
+  pass
+
+
+#  dowod ze student odziedziczyl parametry i metody z klasy person
+x = Student("Mike", "Olsen")
+x.printname()
+
+
+# uzycie funkcji __init__() sprawai ze dziecko nie dziedziczy od rodzica tej funkcji (lub nadpisuje ja w obrebie dziecka)
+class Student(Person):
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+
+y = Student("Pioter", "King")
+y.printname()
+
+
+# można też użyć funkcji __init__() w taki sposob jak ponizej - odniesc sie odrazu do parametrow z klasy Person
+class Student(Person):
+  def __init__(self, fname, lname):
+    Person.__init__(self, fname, lname)
+
+z = Student("Janusz", "Bak")
+z.printname()
