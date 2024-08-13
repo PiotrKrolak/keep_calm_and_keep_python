@@ -1,48 +1,30 @@
 import time
 
 class Timer:
-    def __init__(self, start = 0, stop = 0):
-        self.start = start
-        self.stop = stop
+    def __init__(self):
+        self.start_time = 0
+        self.stop_time = 0
 
-    def time(self):
-        return self.start - self.stop
+    def start(self):
+        self.start_time = time.time()
+        return self.start_time
+
+    def stop(self):
+        self.stop_time = time.time()
+        return self.stop_time
+
+    def elapsed_time(self):
+        return self.stop_time - self.start_time
     
 
 t1 = Timer()
 
-#x = t1.time()
+t1.start()
 
-'''
-y = time.time()
+for i in range(100):
+    print(i)
 
-print(y)
+t1.stop()
 
-z = time.time()
-
-print(z)
-
-a = z - y
-
-print(a)
-
-################################################
-
-b = time.thread_time()
-
-print(b)
-
-################################################
-
-'''
-y = time.time_ns()
-
-print(y)
-
-z = time.time_ns()
-
-print(z)
-
-a = (z - y)
-
-print(a)
+x = t1.elapsed_time()
+print(f"Elapsed time: {x} seconds")
