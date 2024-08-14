@@ -15,16 +15,28 @@ class Timer:
 
     def elapsed_time(self):
         return self.stop_time - self.start_time
-    
 
-t1 = Timer()
 
-t1.start()
 
-for i in range(100):
-    print(i)
+class Zbior:
+    def __init__(self):
+        self.lista = []
 
-t1.stop()
+    def sortowanie_binarne(self):
+        pass
+        
 
-x = t1.elapsed_time()
-print(f"Elapsed time: {x} seconds")
+
+###### TESTS #####
+
+#t1 = Timer()
+
+#t1.start()
+
+#for i in range(100):
+#   print(i)
+
+#t1.stop()
+
+#x = t1.elapsed_time()
+#print(f"Elapsed time: {x} seconds")
