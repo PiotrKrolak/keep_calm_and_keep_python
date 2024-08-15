@@ -22,10 +22,12 @@ class Zbior:
     def __init__(self):
         self.lista = []
 
+    def sortowanie():
+        pass
+
     def sortowanie_binarne(self):
         pass
         
-
 
 ###### TESTS #####
 
