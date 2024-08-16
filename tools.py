@@ -28,6 +28,8 @@ class Zbior:
     def sortowanie_binarne(self):
         pass
         
+    def sortowanie_all(self):
+        pass
 
 ###### TESTS #####
 
