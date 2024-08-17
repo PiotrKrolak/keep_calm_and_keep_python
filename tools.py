@@ -22,7 +22,7 @@ class Zbior:
     def __init__(self):
         self.lista = []
 
-    def sortowanie():
+    def sortowanie(self):
         pass
 
     def sortowanie_binarne(self):
